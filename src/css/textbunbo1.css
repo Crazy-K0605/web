@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #6c5ce7, #55efc4);
+  padding-top: 70px;
+  padding-left: 20px;
+}
+
+/* Welcome section */
+.welcome h1 {
+  font-size: 2rem;
+  color: white;
+  max-width: 500px;
+  line-height: 1.4;
+  padding: 20px;
+}
+
+.menu h1 {
+  font-size: 2rem;
+  color: white;
+  max-width: 500px;
+  line-height: 1.4;
+  padding: 20px;
+}
+
+/* Image gallery */
+.img_bun_bo {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.img_bun_bo img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.main__view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Navbar styles */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #b22222;
+  letter-spacing: 1px;
+}
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.navbar-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.navbar-links li a:hover {
+  color: #b22222;
+}
+.navbar-logo a img {
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.navbar-logo a img:hover {
+  box-shadow: 0 4px 16px rgba(178, 34, 34, 0.25),
+              0 1.5px 6px rgba(0, 0, 0, 0.10);
+  transform: scale(1.05);
+}
+
+/* Main content with cards */
+.content {
+  margin-left: 170px;
+  width: calc(100% - 260px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+  padding: 40px;
+  height: 100vh;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.card.aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Button styles */
+button {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #eee;
+}
+
+/* bunbo.html */
+.content__topping {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  
+}
