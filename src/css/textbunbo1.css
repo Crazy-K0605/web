@@ -118,14 +118,21 @@ body {
 }
 
 .card {
+  display: flex;
+  flex-direction: row;      
+  align-items: center;      
+  gap: 20px;
   background-color: #fff;
   border-radius: 12px;
-  padding: 30px 20px;
-  width: 200px;
-  text-align: center;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  opacity: 0;
-  transform: translateY(30px);
+  padding: 12px 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .card.aos-animate {
@@ -134,29 +141,30 @@ body {
 }
 
 /* Button styles */
-button {
-  font-size: 18px;
+.card button {
+  font-size: 16px;
   font-weight: bold;
-  font-family: Arial, sans-serif;
-  color: #333;
-  background: none;
+  padding: 12px 20px;
+  background-color: #f0f0f0;
   border: none;
-  cursor: pointer;
-  padding: 10px 20px;
   border-radius: 8px;
-  transition: background 0.2s;
+  cursor: pointer;
 }
 
-button:hover {
-  background-color: #eee;
+.card button:hover {
+  background-color: #e0e0e0;
 }
 
 /* bunbo.html */
-.content__topping {
-  height: 80vh;
+.topping {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 40px;
+}
+
+.content_topping {
+  width: 100px;
+  height: 100%;
 }
