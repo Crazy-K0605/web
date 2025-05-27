@@ -7,7 +7,7 @@
 
 body {
   width: 100%;
-  min-height: 100vh;
+  height: 1200px;
   background: linear-gradient(45deg, #6c5ce7, #55efc4);
   padding-top: 70px;
   padding-left: 20px;
@@ -27,7 +27,19 @@ body {
   color: white;
   max-width: 500px;
   line-height: 1.4;
-  padding: 20px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+.foot__inform {
+  font-size: 32px;
+  color: white;
+  display: flex;
 }
 
 /* Image gallery */
@@ -52,7 +64,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  height: 500px;
 }
 
 /* Navbar styles */
@@ -105,16 +117,15 @@ body {
 }
 
 /* Main content with cards */
+
 .content {
   margin-left: 170px;
   width: calc(100% - 260px);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   gap: 30px;
-  flex-wrap: nowrap;
   padding: 40px;
-  height: 100vh;
+  height: 50vh;
 }
 
 .card {
@@ -145,7 +156,7 @@ body {
   font-size: 16px;
   font-weight: bold;
   padding: 12px 20px;
-  background-color: #f0f0f0;
+  background-color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
