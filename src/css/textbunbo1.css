@@ -164,6 +164,16 @@ footer p {
 
 /* next page icon */
 
+.page_selection_arrow {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  padding-right: 15px;
+}
+
 .next_page {
   display: flex;
   align-items: center;
@@ -174,6 +184,12 @@ i {
   padding: 5px 10px;
   color: black;
   font-size: 18px;
+}
+
+.next_page_button {
+  border-radius: 30%;
+  border: none;
+  cursor: pointer;
 }
 
 /* Button styles */
@@ -194,7 +210,7 @@ i {
   flex-wrap: wrap;
   gap: 20px;
   padding-top: 40px;
-  padding-left: 150px;
+  padding-left: 170px;
 }
 
 /* Drinks */
@@ -204,7 +220,7 @@ i {
   flex-wrap: wrap;
   gap: 20px;
   padding-top: 40px;
-  padding-left: 150px;
+  padding-left: 170px;
 }
 
 /* mon them */
