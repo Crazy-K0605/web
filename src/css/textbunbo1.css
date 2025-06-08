@@ -52,7 +52,6 @@ footer .foot_view {
 footer p {
   font-size: 2rem;
   color: white;
-  padding-top: 150px;
 }
 
 /* Image gallery */
@@ -128,6 +127,10 @@ footer p {
   transform: scale(1.05);
 }
 
+.quote {
+  font-size: 1rem;
+  color: rgb(182, 48, 48);
+}
 /* Main content with cards */
 
 .content {
@@ -139,6 +142,8 @@ footer p {
   height: 50vh;
 }
 
+/* Button styles */
+
 .card {
   display: flex;
   flex-direction: row-reverse;
@@ -148,6 +153,7 @@ footer p {
   border-radius: 12px;
   padding: 12px 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
 }
 
 .card img {
@@ -162,37 +168,6 @@ footer p {
   transform: translateY(0);
 }
 
-/* next page icon */
-
-.page_selection_arrow {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 10px;
-  padding-right: 15px;
-}
-
-.next_page {
-  display: flex;
-  align-items: center;
-}
-
-i {
-  gap: 8px;
-  padding: 5px 10px;
-  color: black;
-  font-size: 18px;
-}
-
-.next_page_button {
-  border-radius: 30%;
-  border: none;
-  cursor: pointer;
-}
-
-/* Button styles */
 .card button {
   font-size: 16px;
   font-weight: bold;
@@ -201,6 +176,14 @@ i {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card button:hover {
+  color: #b22222;
 }
 
 /* bunbo */
