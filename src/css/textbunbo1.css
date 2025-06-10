@@ -144,9 +144,9 @@ footer p {
 
 /* Button styles */
 
-.card {
+.button  {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
   gap: 20px;
   background-color: #fff;
@@ -154,6 +154,17 @@ footer p {
   padding: 12px 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 20px;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+a {
+   text-decoration: none;
 }
 
 .card img {
@@ -168,22 +179,9 @@ footer p {
   transform: translateY(0);
 }
 
-.card button {
-  font-size: 16px;
-  font-weight: bold;
-  padding: 12px 20px;
-  background-color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.card button:hover {
-  color: #b22222;
+.button:hover {
+ scale: 1.05;
+ background: linear-gradient(45deg, #6c5ce7, #55efc4);
 }
 
 /* bunbo */
@@ -193,7 +191,7 @@ footer p {
   flex-wrap: wrap;
   gap: 20px;
   padding-top: 40px;
-  padding-left: 170px;
+  padding-left: 80px;
 }
 
 /* Drinks */
@@ -203,7 +201,7 @@ footer p {
   flex-wrap: wrap;
   gap: 20px;
   padding-top: 40px;
-  padding-left: 170px;
+  padding-left: 200px;
 }
 
 /* mon them */
