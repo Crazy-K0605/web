@@ -153,6 +153,7 @@ form {
 #search input {
   background-color: #03a4ed;
   border: none;
+  outline: none;
 }
 
 .welcome_title button {
@@ -226,6 +227,7 @@ form {
 .services .row {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   gap: 30px;
 }
 
@@ -257,8 +259,8 @@ form {
 }
 
 .services .icon img {
-  width: 28px;
-  height: 28px;
+  width: 50px;
+  height: 50px;
 }
 
 .services .right-text h4 {
@@ -302,9 +304,9 @@ form {
   text-align: center;
 }
 
-.left-image img {
+.left-image-services img {
   max-width: 100%;
-  height: auto;
+  height: 413px;
 }
 
 .section-heading {
@@ -418,6 +420,7 @@ form {
 .row_portfolio_body {
   display: flex;
   justify-content: space-around;
+  gap: 20px;
 }
 
 .our-portfolio .showed-content img {
@@ -429,7 +432,7 @@ form {
 }
 
 .our-portfolio .col-lg-3 {
-   width: 261px;
+   width: 306px;
   margin-bottom: 30px;
   transition: transform 0.3s ease;
 }
@@ -450,7 +453,7 @@ form {
 }
 
 .our-portfolio .showed-content {
-  width: 100%;
+  width: 280px;
   height: 213px;
   overflow: hidden;
   border-radius: 12px;
@@ -466,7 +469,7 @@ form {
   left: 20px;
   right: 20px;
   bottom: 20px;
-  background-color: #fe3f40;
+  background: linear-gradient(105deg, rgba(255, 77, 30, 1) 0%, rgba(255, 44, 109, 1) 100%);
   border-radius: 16px;
   opacity: 0;
   visibility: hidden;
@@ -505,6 +508,12 @@ form {
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .section-heading {
